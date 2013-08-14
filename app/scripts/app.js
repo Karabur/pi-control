@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('piApp', [])
+angular.module('piApp', ['controllers'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -11,3 +11,8 @@ angular.module('piApp', [])
         redirectTo: '/'
       });
   });
+
+
+angular.module('controllers', ['restangular']).config(function(RestangularProvider) {
+    RestangularProvider.setBaseUrl("http://192.168.0.10:4567/control");
+});

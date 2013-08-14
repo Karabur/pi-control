@@ -1,0 +1,22 @@
+
+html,body {
+  height: 100%;
+  margin:0;
+}
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+  display: -webkit-flex;
+  height: 100%;
+}
+
+.center-content {
+  -webkit-flex: 1 0 auto;
+  align-self: stretch;
+  -webkit-align-self: stretch;
+}
